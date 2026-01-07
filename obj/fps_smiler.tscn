@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://di7vjc2o5ac48"]
+
+[ext_resource type="Script" uid="uid://0xm2jb8mdlh" path="res://FPSSmiler/obj/fps_smiler.gd" id="1_hydt6"]
+[ext_resource type="Texture2D" uid="uid://dd7ms7qidc1oa" path="res://FPSSmiler/gfx/smiler.png" id="2_mdjba"]
+
+[sub_resource type="Gradient" id="Gradient_mdjba"]
+offsets = PackedFloat32Array(-1, 0, 1)
+colors = PackedColorArray(1, 0, 0, 1, 1, 0.8392157, 0, 1, 0, 1, 0, 1)
+
+[node name="FPSSmiler" type="Node2D"]
+script = ExtResource("1_hydt6")
+color_gradient = SubResource("Gradient_mdjba")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_mdjba")
+
+[node name="BrowL" type="Line2D" parent="."]
+position = Vector2(-22, -25)
+rotation = -1.5707964
+points = PackedVector2Array(-12, -12, 12, 12)
+width = 6.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="BrowR" type="Line2D" parent="."]
+position = Vector2(22, -25)
+rotation = 1.5707964
+points = PackedVector2Array(-12, 12, 12, -12)
+width = 6.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Mouth" type="Line2D" parent="."]
+position = Vector2(0, 24)
+points = PackedVector2Array(-32, 8, -16, -8, 16, -8, 32, 8)
+width = 8.0
+default_color = Color(0, 0, 0, 1)
