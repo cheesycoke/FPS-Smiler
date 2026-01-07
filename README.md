@@ -1,5 +1,5 @@
 # FPS-Smiler
-A silly Godot object to display framerate in the least helpful way possible, made in 4.5.1
+A silly Godot object to display framerate in the least helpful way possible, made in 4.5.1 to work with 4.5.1
 
 [Based on a debug feature from Super Mario Strikers](https://x.com/MarioBrothBlog/status/1649132614119223302)
 
